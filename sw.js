@@ -1,5 +1,5 @@
 // Сохраняет сайт на телефоне после первого открытия: на форуме связь бывает слабой.
-const CACHE = 'vozhaty-733b743d67';
+const CACHE = 'vozhaty-e101761bb1';
 const FILES = ['./', 'img/camp-hero.webp', 'img/camp-band.webp', 'favicon.svg'];
 
 self.addEventListener('install', e => e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting())));
